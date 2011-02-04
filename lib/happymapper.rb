@@ -88,7 +88,7 @@ module HappyMapper
         root = node.name == tag_name
       end
 
-      namespace = "" #@namespace || (node.namespaces && node.namespaces.default)
+      namespace = nil #@namespace || (node.namespaces && node.namespaces.default)
       namespace = "#{DEFAULT_NS}:#{namespace}" if namespace
 
       xpath = root ? '/' : './/'

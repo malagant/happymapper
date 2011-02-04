@@ -140,7 +140,7 @@ module HappyMapper
         
         if element?
           if(options[:single].nil? || options[:single])
-            result = node.find_first(xpath(namespace), namespace)
+            result = node.find_first(xpath(namespace))
           else
             result = node.find(xpath(namespace))
           end
