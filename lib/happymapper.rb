@@ -95,7 +95,7 @@ module HappyMapper
       xpath += "#{DEFAULT_NS}:" if namespace
       xpath += tag_name
 
-      nodes = node.find(xpath, Array(namespace))
+      nodes = node.find(xpath)
       collection = nodes.collect do |n|
         obj = new
 
